@@ -7,26 +7,26 @@ INPUT:
 PROCESS:
     1. Initialize restaurant with tables and empty reservation/waitlist lists.
     2. When a reservation request is received:
-        a. Check for available tables matching party size, time, and preferences.
-        b. If a suitable table is available:
+        Check for available tables matching party size, time, and preferences.
+        If a suitable table is available:
             - Assign the table to the guest.
             - Mark the table as reserved for that time slot.
             - Create a Reservation object (status = CONFIRMED).
-        c. If no table available:
+        If no table available:
             - Add the guest to the waitlist with their preferences.
             - Create a Reservation object (status = WAITLISTED).
     3. For walk-in guests:
         - Attempt to make an immediate reservation as above.
     4. When guests arrive:
-        a. Check reservation status.
-        b. If confirmed or if table becomes free, seat the guest and update the status.
+        Check reservation status.
+        If confirmed or if table becomes free, seat the guest and update the status.
     5. When a reservation is cancelled:
-        a. Free up the table.
-        b. Check waitlist for guests who can now be accommodated, assign table if possible.
+         Free up the table.
+        Check waitlist for guests who can now be accommodated, assign table if possible.
     6. Optimize table turnover during peak hours:
-        a. Track table usage and expected end times.
-        b. Prepare tables promptly for the next reservation or waitlisted guest.
-        c. Prioritize VIPs or key guests as needed.
+        Track table usage and expected end times.
+        Prepare tables promptly for the next reservation or waitlisted guest.
+        Prioritize VIPs or key guests as needed.
 
 OUTPUT:
     - Confirmation or waitlist notification for reservation requests.
