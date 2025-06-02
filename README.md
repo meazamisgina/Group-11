@@ -26,6 +26,6 @@ Group-11 Members
  
  -Lwam Bisrat
  
- -Meaza Msgna
+ -Meaza Misgina
  
- -Ksanet Shshay
+ -Kisanet Shshay
