@@ -2,6 +2,7 @@
 
 This repository contains live coding questions.Our thought process(pseudocode) and the implementation of the pseudocode
 in kotlin,JavaScript and python.
+
 #Question-One
 
 Create a tool for managing a shopping list that can add items ,remove items,
@@ -20,7 +21,9 @@ ensure a smooth dining experience for both guests and staff,key guests
 
 
 Group-11 Members 
+
  Name
+ 
  -Lwam Bisrat
  -Meaza Msgna
  -Ksanet Shshay
