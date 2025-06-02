@@ -7,26 +7,24 @@ INPUT:
 PROCESS:
     1. Initialize restaurant with tables and empty reservation/waitlist lists.
     2. When a reservation request is received:
-        Check for available tables matching party size, time, and preferences.
-        If a suitable table is available:
-            - Assign the table to the guest.
-            - Mark the table as reserved for that time slot.
-            - Create a Reservation object (status = CONFIRMED).
-        If no table available:
-            - Add the guest to the waitlist with their preferences.
-            - Create a Reservation object (status = WAITLISTED).
-    3. For walk-in guests:
-        - Attempt to make an immediate reservation as above.
-    4. When guests arrive:
-        Check reservation status.
-        If confirmed or if table becomes free, seat the guest and update the status.
-    5. When a reservation is cancelled:
-         Free up the table.
-        Check waitlist for guests who can now be accommodated, assign table if possible.
-    6. Optimize table turnover during peak hours:
-        Track table usage and expected end times.
-        Prepare tables promptly for the next reservation or waitlisted guest.
-        Prioritize VIPs or key guests as needed.
+    3. If there is available tables matching party size, time, and preferences.
+    4. If a suitable table is available:
+    5. Assign the table to the guest.
+    6. Mark the table as reserved for that time slot.
+    7. Create a Reservation object (status = CONFIRMED).
+    8. If no table available:
+    9 . Add the guest to the waitlist with their preferences.
+    10. Create a Reservation object (status = WAITLISTED).
+    11. For walk-in guests:
+    12. Attempt to make an immediate reservation as above.
+    13. When guests arrive:
+    14. If table becomes free, seat the guest and update the status.
+    15. When a reservation is cancelled:
+    16. Free up the table.
+    17. Optimize table turnover during peak hours:
+    18. Track table usage and expected end times.
+    19. Prepare tables promptly for the next reservation or waitlisted guest.
+    20. Prioritize VIPs or key guests as needed.
 
 OUTPUT:
     - Confirmation or waitlist notification for reservation requests.
