@@ -5,7 +5,7 @@ INPUT:
     - Cancellations or changes to reservations
 
 PROCESS:
-    1. Initialize restaurant with tables and empty reservation/waitlist lists.
+    1. Create lists restaurant with tables and empty reservation/waitlist.
     2. When a reservation request is received:
     3. If there is available tables matching party size, time, and preferences.
     4. If a suitable table is available:
