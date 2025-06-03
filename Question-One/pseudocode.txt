@@ -4,13 +4,13 @@ For adding item: item name, quantity, price per unit
 For removing item: item name  
 
 Process
-1. Start with an empty list called "shopping list"
+1. Start with an hash map called "shopping list" that store items with their detail.
 2. If user chooses "add item ask for item name, quantity, and price per unit
 3. Store this item (with its details) in the shopping list
 4. If user chooses "remove item" ask for item name
 5. Find and remove that item from the shopping list
-6. If user chooses "view total cost set total to zero
-7. For each item in the shopping list multiply quantity by price per unit, and add to total
+6. If user chooses "view total cost", then
+7. For each item in the shopping list multiply quantity by price per unit, and sum all prices.
 
 Outputs
 Total cost of all items  
