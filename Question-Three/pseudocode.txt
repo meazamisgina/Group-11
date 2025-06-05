@@ -5,16 +5,16 @@ INPUT:
     - Cancellations or changes to reservations
 
 PROCESS:
-    1. Create lists restaurant with tables and empty reservation/waitlist.
+    1. Create hashmap that stores restaurant tables details.
     2. When a reservation request is received:
     3. If there is available tables matching party size, time, and preferences.
     4. If a suitable table is available:
     5. Assign the table to the guest.
     6. Mark the table as reserved for that time slot.
-    7. Create a Reservation object (status = CONFIRMED).
-    8. If no table available:
+    7. Create a hashmap that holds guest details assigned to the available table.
+    8. If there is no available table :
     9 . Add the guest to the waitlist with their preferences.
-    10. Create a Reservation object (status = WAITLISTED).
+    10. Create a hasmap that holds guest detail that have waitlist status.
     11. For walk-in guests:
     12. Attempt to make an immediate reservation as above.
     13. When guests arrive:
