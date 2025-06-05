@@ -6,12 +6,12 @@ Task information id=Int  name=string  projectid=Int assigned to=string deadline=
 
 process
 
-1: create a list of object called task that accept all the task information.
+1: create a hashmap  that accept all the task information.
 2 : if new task created save with its details.
 3 :then notify the assigned user that they have a a new task and return the new task id.
-4 :create list of object called project that accept all project information.
+4 :create hash map that accept all project information.
 5 : when new project is created generate a a unique id start, end date and save it.
-6 : create a method  add task to update or add a tasks status and fetchs the task id and save the updated task.
+6 : create a list task to update or add a tasks status and fetchs the task id and save the updated task.
 7 :if the task marked as completed find the task that depend on it and notify thier assignes that dependency is cleared.
 8 : create a list to generate a report for a project and fetch the project and all its tasks.
 9 : each task print its name, status, assigned user and deadline .
